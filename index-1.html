@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>My fitness diary</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#form">Mi formulario</a></li>
+        <li><a href="#progress">Mi progreso</a></li>
+        <li><a href="#diary">Mi diaro</a></li>
+      </ul>
+    </nav>
+    <section id="form">
+      <h1>Mi formulario</h1>
+      <!-- Este formulario registra: nombre del ejercio, número de series, número de repeticiones, peso y comentarios adicionales -->
+      <form>
+        <label for="exercise-name">Exercise's name</label>
+        <input
+          type="text"
+          id="exercise-name"
+          placeholder="Curl de biceps"
+          required
+        />
+        <label for="series-number">Serie's number</label>
+        <input type="number" id="series-number" placeholder="1" />
+        <label for="reps-number">Reps number</label>
+        <input type="number" id="reps-number" placeholder="1" />
+        <label for="weight">Weight</label>
+        <input type="number" id="weight" placeholder="10kg" />
+        <label for="date">Date</label>
+        <input type="date" id="date" placeholder="10kg" />
+        <div>
+          <label for="comment">Comment</label>
+          <textarea
+            type="text"
+            id="comment"
+            placeholder="Today it has been easy"
+            rows="20"
+            cols="40"
+          ></textarea>
+          <p>25/150</p>
+        </div>
+        <button>Save</button>
+      </form>
+    </section>
+    <section id="diary">
+      <h1>Mi diario</h1>
+      <ul>
+        <li class="day">
+          <p class="day__date">Lunes 8 de Mayo</p>
+          <table>
+            <tr>
+              <th>Exercise's name</th>
+              <th>Serie's number</th>
+              <th>Reps number</th>
+              <th>Weight</th>
+              <th>Comment</th>
+            </tr>
+            <tr>
+              <td>Curl de biceps</td>
+              <td>4</td>
+              <td>12</td>
+              <td>10kg</td>
+              <td>Hoy me he visto bastante bien</td>
+            </tr>
+            <tr>
+              <td>Dominadas</td>
+              <td>4</td>
+              <td>12</td>
+              <td>15kg</td>
+              <td>Hoy me he visto bastante bien</td>
+            </tr>
+          </table>
+        </li>
+        <li class="day">
+          <p class="day__date">Miercoles 10 de Mayo</p>
+          <table>
+            <tr>
+              <th>Exercise's name</th>
+              <th>Serie's number</th>
+              <th>Reps number</th>
+              <th>Comment</th>
+            </tr>
+            <tr>
+              <td>Curl de biceps</td>
+              <td>4</td>
+              <td>12</td>
+              <td>Hoy me he visto bastante bien</td>
+            </tr>
+            <tr>
+              <td>Curl de biceps</td>
+              <td>4</td>
+              <td>12</td>
+              <td>Hoy me he visto bastante bien</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </section>
+    <section id="progress">
+      <h1>Mi progreso</h1>
+    </section>
+  </body>
+</html>

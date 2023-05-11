@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>My fitness diary</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#my-form">Mi formulario</a></li>
+        <li><a href="#my-dictionary">Mi diario</a></li>
+      </ul>
+    </nav>
+    <!-- Requisito-1: 
+    Crear un formuario que nos permita recoger la siguiente info:
+    - Nombre del ejercicio
+    - Número de series
+    - Número de repeticiones
+    - Peso
+    - Comentario sobre el ejercicio
+    - Fecha de registro
+    -->
+    <section #my-form>
+      <h1>Mi formulario</h1>
+      <form class="form">
+        <label for="exercise-name">Nombre del ejercicio</label>
+        <input
+          type="text"
+          id="exercise-name"
+          placeholder="Curl de biceps"
+          required
+        />
+        <label for="exercise-series">Número de series</label>
+        <input type="number" id="exercise-series" placeholder="2" required />
+        <label for="exercise-reps">Número de repeticiones</label>
+        <input type="number" #exercise-reps placeholder="10" required />
+        <label for="exercise-weight">Peso</label>
+        <input
+          type="number"
+          id="exercise-weight"
+          placeholder="10kgs"
+          required
+        />
+        <label for="exercise-weight">Date</label>
+        <input
+          type="date"
+          id="exercise-weight"
+          placeholder="10-05-23"
+          required
+        />
+        <select id="exercise-type">
+          <option value="weighted">Con peso</option>
+          <option value="weightless">Sin peso</option>
+        </select>
+        <div>
+          <label for="comment">Comment</label>
+          <textarea
+            type="text"
+            id="comment"
+            rows="10"
+            cols="20"
+            maxlength="150"
+          ></textarea>
+          <p>25/150</p>
+        </div>
+        <button>Guardar</button>
+      </form>
+    </section>
+    <section #my-diary>
+      <h1>Mi diario</h1>
+      <ul>
+        <li class="day">
+          <p>Miercoles 10 de Mayo</p>
+          <table>
+            <thead>
+              <th>Exercise's name</th>
+              <th>Serie's number</th>
+              <th>Reps number</th>
+              <th>Weight</th>
+              <th>Comment</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Curl de biceps</td>
+                <td>4</td>
+                <td>12</td>
+                <td>10kg</td>
+                <td>Hoy me he visto bastante bien</td>
+              </tr>
+              <tr>
+                <td>Dominadas</td>
+                <td>4</td>
+                <td>12</td>
+                <td>15kg</td>
+                <td>Hoy me he visto bastante bien</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
