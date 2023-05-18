@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigation {
+  display: flex;
+  padding: 16px;
+  background-color: black;
+  height: 56px;
+}
+
+.navigation .list {
+  display: flex;
+}
+
+.navigation .logo {
+  color: white;
+  font-size: 20spx;
+}

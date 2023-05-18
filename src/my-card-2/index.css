@@ -1,0 +1,65 @@
+:root {
+  --title-font-size: 24px;
+  --title-line-height: 28px;
+  --body-font-size: 16px;
+  --body-line-height: 20px;
+  --card-width: 310px;
+  --default-padding: 16px;
+  --default-border: solid 2px gainsboro;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: var(--default-border);
+  border-radius: 8px;
+  width: var(--card-width);
+}
+
+.card__info,
+.card__item {
+  padding: var(--default-padding);
+  border-bottom: var(--default-border);
+}
+
+.card__footer {
+  padding: var(--default-padding);
+}
+
+.image {
+  width: var(--card-width);
+}
+
+.title {
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  font-weight: 600;
+}
+
+.card__info .title {
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+.card__footer a:first-child {
+  margin-right: 8px;
+}
