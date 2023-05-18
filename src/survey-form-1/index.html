@@ -6,93 +6,102 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    />ç
+    <link rel="stylesheet" href="index.css">
     <title>Collaboration project</title>
   </head>
   <body>
-    <h1>My feedback form</h1>
-    <form>
-      <ul>
-        <li>
-          <label for="Name">Name:</label>
-          <input type="text" #Name />
-        </li>
-        <li>
-          <label for="Email">Email:</label>
-          <input type="email" #Email />
-        </li>
-        <li>
-          <label for="Password">Password:</label>
-          <input type="password" #Password />
-        </li>
-        <li>
-          <p>Please check all the emotions the apply to you:</p>
-          <ul>
-            <li>
-              <label for="Angry">Angry</label
-              ><input type="checkbox" #Angry checked />
-            </li>
-            <li>
-              <label for="Angry">Sad</label><input type="checkbox" #Sad />
-            </li>
-            <li>
-              <label for="Angry">Happy</label><input type="checkbox" #Happy />
-            </li>
-            <li>
-              <label for="Angry">Ambivalent</label
-              ><input type="checkbox" #Ambivalent />
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <p>How satisfled were you with our service?</p>
-          <ul>
-            <li>
-              <label for="vsatisfied">Very satisfied</label>
-              <input id="vsatisfied" type="radio" name="service" checked />
-            </li>
-            <li>
-              <label for="satisfied">Satisfied</label>
-              <input id="satisfied" type="radio" name="service" />
-            </li>
-            <li>
-              <label for="didntcare">Didn't care</label>
-              <input id="didntcare" type="radio" name="service" />
-            </li>
-            <li>
-              <label for="dissatisfied">Dissatisfied</label>
-              <input id="dissatisfied" type="radio" name="service" />
-            </li>
-            <li>
-              <label for="vdissatisfied">Very dissatisfied</label>
-              <input id="vdissatisfied" type="radio" name="service" />
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <label for="futhercomment">Futher comments:</label>
-          <textarea cols="20" rows="3"></textarea>
-        </li>
-        <li>
-          <label for="photo">Bio photo:</label>
-          <input accept="image/png,image/jpeg" type="file" id="photo" />
-        </li>
-        <li>
-          <label for="ciudades">Location visited:</label>
-          <select id="ciudades">
-            <option disabled selected>Select location</option>
-            <option value="Madrid">Madrid</option>
-            <option value="Barcelona">Barcelona</option>
-            <option value="Málaga">Málaga</option>
-            <option value="Galicia">Galicia</option>
-          </select>
-        </li>
-        <li>
-          <button>Submit</button>
-        </li>
-      </ul>
-    </form>
+    <section>
+      <h2>My feedback form</h2>
+      <form>
+        <ul>
+          <li>
+            <label for="Name">Name:</label>
+            <input type="text" #Name />
+          </li>
+          <li>
+            <label for="Email">Email:</label>
+            <input type="email" #Email />
+          </li>
+          <li>
+            <label for="Password">Password:</label>
+            <input type="password" #Password />
+          </li>
+          <li>
+            <p>Please check all the emotions the apply to you:</p>
+            <ul>
+              <li>
+                <label for="Angry">Angry</label
+                ><input type="checkbox" #Angry checked />
+              </li>
+              <li>
+                <label for="Angry">Sad</label><input type="checkbox" #Sad />
+              </li>
+              <li>
+                <label for="Angry">Happy</label><input type="checkbox" #Happy />
+              </li>
+              <li>
+                <label for="Angry">Ambivalent</label
+                ><input type="checkbox" #Ambivalent />
+              </li>
+            </ul>
+          </li>
+  
+          <li>
+            <p>How satisfled were you with our service?</p>
+            <ul>
+              <li>
+                <label for="vsatisfied">Very satisfied</label>
+                <input id="vsatisfied" type="radio" name="service" checked />
+              </li>
+              <li>
+                <label for="satisfied">Satisfied</label>
+                <input id="satisfied" type="radio" name="service" />
+              </li>
+              <li>
+                <label for="didntcare">Didn't care</label>
+                <input id="didntcare" type="radio" name="service" />
+              </li>
+              <li>
+                <label for="dissatisfied">Dissatisfied</label>
+                <input id="dissatisfied" type="radio" name="service" />
+              </li>
+              <li>
+                <label for="vdissatisfied">Very dissatisfied</label>
+                <input id="vdissatisfied" type="radio" name="service" />
+              </li>
+            </ul>
+          </li>
+  
+          <li>
+            <label for="futhercomment">Futher comments:</label>
+            <textarea cols="20" rows="3"></textarea>
+          </li>
+          <li>
+            <label for="photo">Bio photo:</label>
+            <input accept="image/png,image/jpeg" type="file" id="photo" />
+          </li>
+          <li>
+            <label for="ciudades">Location visited:</label>
+            <select id="ciudades">
+              <option disabled selected>Select location</option>
+              <option value="Madrid">Madrid</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Málaga">Málaga</option>
+              <option value="Galicia">Galicia</option>
+            </select>
+          </li>
+          <li>
+            <button>Submit</button>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section>
+      <h2>My componers</h2>
+      <div>
+        <input type="text" placeholder="Entered Text" class="input-error">
+      </div>
+    </section>
   </body>
 </html>

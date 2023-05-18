@@ -1,4 +1,4 @@
-:host {
+:root {
   --primary-color: #094074;
   --primary-color-dark: #041f39;
   --primary-color-light: #ecf5fe;
@@ -8,4 +8,19 @@
   --gray-color: #343a40;
   --gray-color-dark: #adb5bd;
   --gray-color-light: #f8f9fa;
+}
+
+input{
+  all: unset
+}
+
+.input-error{
+  color: var(--danger-color);
+  background-color: var(--danger-color-light);
+  border: solid 2px var(--danger-color);
+  padding: 8px;
+  border-radius: 4px;  
+}
+.input-error::placeholder{
+  color: var(--danger-color);
 }
