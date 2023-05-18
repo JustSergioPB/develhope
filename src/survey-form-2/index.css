@@ -9,3 +9,18 @@
     --gray-color-dark: #adb5bd;
     --gray-color-light: #f8f9fa;
   }
+
+  input{
+    all: unset;
+  }
+  .input-error{
+    color: var(--danger-color);
+    border: solid 2px var(--danger-color);
+    background-color: var(--danger-color-light);
+    border-radius: 4px;
+    padding: 8px;
+  }
+
+  .input-error::placeholder {
+    color: var(--danger-color);
+  }
