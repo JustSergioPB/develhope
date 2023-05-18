@@ -1,0 +1,11 @@
+:host {
+  --primary-color: #094074;
+  --primary-color-dark: #041f39;
+  --primary-color-light: #ecf5fe;
+  --danger-color: #c1292e;
+  --danger-color-dark: #531319;
+  --danger-color-light: #fbeeef;
+  --gray-color: #343a40;
+  --gray-color-dark: #adb5bd;
+  --gray-color-light: #f8f9fa;
+}
