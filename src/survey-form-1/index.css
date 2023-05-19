@@ -24,3 +24,22 @@ input{
 .input-error::placeholder{
   color: var(--danger-color);
 }
+.input-hover{
+  border: solid 2px var(--primary-color);
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--primary-color-light); 
+}
+.input-hover:hover{
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 4px; 
+
+}
+.input-hover:focus{
+  background-color:var(--primary-color-dark);
+  color:var(--primary-color-light)
+}
+.input-hover::placeholder{
+  color:var(--primary-color-dark)
+}
