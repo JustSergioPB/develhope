@@ -21,36 +21,53 @@
       </ul>
     </nav>
     <section id="form">
-      <h1>Mi formulario</h1>
+      <h1 class="title">Mi formulario</h1>
       <!-- Este formulario registra: nombre del ejercio, número de series, número de repeticiones, peso y comentarios adicionales -->
       <form class="form">
-        <label for="exercise-name">Exercise's name</label>
-        <input
-          type="text"
-          id="exercise-name"
-          placeholder="Curl de biceps"
-          required
-        />
-        <label for="series-number">Serie's number</label>
-        <input type="number" id="series-number" placeholder="1" />
-        <label for="reps-number">Reps number</label>
-        <input type="number" id="reps-number" placeholder="1" />
-        <label for="weight">Weight</label>
-        <input type="number" id="weight" placeholder="10kg" />
-        <label for="date">Date</label>
-        <input type="date" id="date" placeholder="10kg" />
-        <div>
-          <label for="comment">Comment</label>
+        <div class="form__row">
+          <div class="form__field form__field--50">
+            <label class="form__label" for="exercise-name"
+              >Exercise's name</label
+            >
+            <input
+              type="text"
+              id="exercise-name"
+              placeholder="Curl de biceps"
+              required
+            />
+          </div>
+          <div class="form__field form__field--10">
+            <label class="form__label" for="series-number"
+              >Serie's number</label
+            >
+            <input type="number" id="series-number" placeholder="1" />
+          </div>
+          <div class="form__field form__field--10">
+            <label class="form__label" for="reps-number">Reps number</label>
+            <input type="number" id="reps-number" placeholder="1" />
+          </div>
+          <div class="form__field form__field--10">
+            <label class="form__label" for="weight">Weight</label>
+            <input type="number" id="weight" placeholder="10kg" />
+          </div>
+          <div class="form__field form__field--20">
+            <label class="form__label" for="date">Date</label>
+            <input type="date" id="date" />
+          </div>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="comment">Comment</label>
           <textarea
             type="text"
             id="comment"
             placeholder="Today it has been easy"
-            rows="20"
-            cols="40"
           ></textarea>
-          <p>25/150</p>
+          <p class="form__hint">25/150</p>
         </div>
-        <button>Save</button>
+        <div class="form__actions">
+          <button class="button button--discrete">Reset</button>
+          <button class="button button--primary">Save</button>
+        </div>
       </form>
     </section>
     <section id="diary">
