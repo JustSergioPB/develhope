@@ -15,8 +15,8 @@
     <nav class="navigation">
       <p class="logo">My diary</p>
       <ul class="list">
-        <li class="navigation-link"><a href="#my-form">Mi formulario</a></li>
-        <li><a href="#my-dictionary">Mi diario</a></li>
+        <li class="link"><a href="#my-form">Mi formulario</a></li>
+        <li class="link"><a href="#my-dictionary">Mi diario</a></li>
       </ul>
     </nav>
     <!-- Requisito-1: 
@@ -29,38 +29,51 @@
     - Fecha de registro
     -->
     <section #my-form>
-      <h1>Mi formulario</h1>
+      <h1 class="title">Mi formulario</h1>
       <form class="form">
-        <label for="exercise-name">Nombre del ejercicio</label>
-        <input
-          type="text"
-          id="exercise-name"
-          placeholder="Curl de biceps"
-          required
-        />
-        <label for="exercise-series">Número de series</label>
-        <input type="number" id="exercise-series" placeholder="2" required />
-        <label for="exercise-reps">Número de repeticiones</label>
-        <input type="number" #exercise-reps placeholder="10" required />
-        <label for="exercise-weight">Peso</label>
-        <input
-          type="number"
-          id="exercise-weight"
-          placeholder="10kgs"
-          required
-        />
-        <label for="exercise-weight">Date</label>
-        <input
-          type="date"
-          id="exercise-weight"
-          placeholder="10-05-23"
-          required
-        />
-        <select id="exercise-type">
-          <option value="weighted">Con peso</option>
-          <option value="weightless">Sin peso</option>
-        </select>
-        <div>
+        <div class="form__field">
+          <label for="exercise-name">Nombre del ejercicio</label>
+          <input
+            type="text"
+            id="exercise-name"
+            placeholder="Curl de biceps"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label for="exercise-series">Número de series</label>
+          <input type="number" id="exercise-series" placeholder="2" required />
+        </div>
+        <div class="form__field">
+          <label for="exercise-reps">Número de repeticiones</label>
+          <input type="number" #exercise-reps placeholder="10" required />
+        </div>
+        <div class="form__field">
+          <label for="exercise-weight">Peso</label>
+          <input
+            type="number"
+            id="exercise-weight"
+            placeholder="10kgs"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label for="exercise-weight">Date</label>
+          <input
+            type="date"
+            id="exercise-weight"
+            placeholder="10-05-23"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label for="exercise-type">Tipo</label>
+          <select id="exercise-type">
+            <option value="weighted">Con peso</option>
+            <option value="weightless">Sin peso</option>
+          </select>
+        </div>
+        <div class="form__field">
           <label for="comment">Comment</label>
           <textarea
             type="text"
@@ -71,11 +84,14 @@
           ></textarea>
           <p>25/150</p>
         </div>
-        <button>Guardar</button>
+        <div class="form__actions">
+          <button class="button button--discrete">Reset</button>
+          <button class="button button--primary">Guardar</button>
+        </div>
       </form>
     </section>
-    <section #my-diary>
-      <h1>Mi diario</h1>
+    <section class="section-2" #myDiary>
+      <h1 class="title">Mi diario</h1>
       <ul>
         <li class="day">
           <p>Miercoles 10 de Mayo</p>
