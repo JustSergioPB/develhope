@@ -1,26 +1,50 @@
 :root {
-    --primary-color: #094074;
-    --primary-color-dark: #041f39;
-    --primary-color-light: #ecf5fe;
-    --danger-color: #c1292e;
-    --danger-color-dark: #531319;
-    --danger-color-light: #fbeeef;
-    --gray-color: #343a40;
-    --gray-color-dark: #adb5bd;
-    --gray-color-light: #f8f9fa;
-  }
+  --primary-color: #1376d2;
+  --primary-color-dark: #041f39;
+  --primary-color-light: #ecf5fe;
+  --danger-color: #c1292e;
+  --danger-color-dark: #531319;
+  --danger-color-light: #fbeeef;
+  --gray-color: #343a40;
+  --gray-color-dark: #adb5bd;
+  --gray-color-light: #f8f9fa;
+}
 
-  input{
-    all: unset;
-  }
-  .input-error{
-    color: var(--danger-color);
-    border: solid 2px var(--danger-color);
-    background-color: var(--danger-color-light);
-    border-radius: 4px;
-    padding: 8px;
-  }
+input {
+  all: unset;
+}
+.input-error {
+  color: var(--danger-color);
+  border: solid 2px var(--danger-color);
+  background-color: var(--danger-color-light);
+  border-radius: 4px;
+  padding: 8px;
+}
 
-  .input-error::placeholder {
-    color: var(--danger-color);
-  }
+.input-error::placeholder {
+  color: var(--danger-color);
+}
+
+#input-hover {
+  margin-top: 0.5em;
+}
+
+.input-hover {
+  border: 1px solid var(--gray-color-dark);
+  border-radius: 0.5em;
+  padding: 0.375em;
+}
+
+.input-hover::placeholder {
+  color: black;
+}
+
+.input-hover:focus {
+  border: 1px solid var(--primary-color)
+}
+
+.input-hover:hover {
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  background-color: white ;
+}
