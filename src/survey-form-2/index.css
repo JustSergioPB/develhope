@@ -48,3 +48,14 @@ input {
   cursor: pointer;
   background-color: white ;
 }
+
+#input-disabled{
+  margin-top: 1em;
+}
+
+.input-disabled{
+  border: solid 2px var(--gray-color-dark);
+  border-radius: 0.5em;
+  background-color: var(--gray-color-dark);
+  padding: 0.375em;
+}
