@@ -17,6 +17,7 @@
       <ul class="list">
         <li class="link"><a href="#my-form">Mi formulario</a></li>
         <li class="link"><a href="#my-dictionary">Mi diario</a></li>
+        <li class="link"><a href="#my-schedule">Mi schedule</a></li>
       </ul>
     </nav>
     <!-- Requisito-1: 
@@ -28,34 +29,41 @@
     - Comentario sobre el ejercicio
     - Fecha de registro
     -->
-    <section #my-form>
+    <section id="my-form">
       <h1 class="title">Mi formulario</h1>
       <form class="form">
-        <div class="form__field">
-          <label for="exercise-name">Nombre del ejercicio</label>
-          <input
-            type="text"
-            id="exercise-name"
-            placeholder="Curl de biceps"
-            required
-          />
-        </div>
-        <div class="form__field">
-          <label for="exercise-series">Número de series</label>
-          <input type="number" id="exercise-series" placeholder="2" required />
-        </div>
-        <div class="form__field">
-          <label for="exercise-reps">Número de repeticiones</label>
-          <input type="number" #exercise-reps placeholder="10" required />
-        </div>
-        <div class="form__field">
-          <label for="exercise-weight">Peso</label>
-          <input
-            type="number"
-            id="exercise-weight"
-            placeholder="10kgs"
-            required
-          />
+        <div class="form__row">
+          <div class="form__field form__field--85">
+            <label for="exercise-name">Nombre del ejercicio</label>
+            <input
+              type="text"
+              id="exercise-name"
+              placeholder="Curl de biceps"
+              required
+            />
+          </div>
+          <div class="form__field form__field--5">
+            <label for="exercise-series">Número de series</label>
+            <input
+              type="number"
+              id="exercise-series"
+              placeholder="2"
+              required
+            />
+          </div>
+          <div class="form__field form__field--10">
+            <label for="exercise-reps">Número de repeticiones</label>
+            <input type="number" #exercise-reps placeholder="10" required />
+          </div>
+          <div class="form__field form__field--10">
+            <label for="exercise-weight">Peso</label>
+            <input
+              type="number"
+              id="exercise-weight"
+              placeholder="10kgs"
+              required
+            />
+          </div>
         </div>
         <div class="form__field">
           <label for="exercise-weight">Date</label>
@@ -82,7 +90,7 @@
             cols="20"
             maxlength="150"
           ></textarea>
-          <p>25/150</p>
+          <p class="form__hint">25/150</p>
         </div>
         <div class="form__actions">
           <button class="button button--discrete">Reset</button>
@@ -90,18 +98,50 @@
         </div>
       </form>
     </section>
-    <section class="section-2" #myDiary>
+    <section class="section-2" id="my-diary">
       <h1 class="title">Mi diario</h1>
-      <ul>
+      <ul class="timeline">
         <li class="day">
-          <p>Miercoles 10 de Mayo</p>
+          <p class="day__title">Lunes 8 de Mayo</p>
           <table>
             <thead>
-              <th>Exercise's name</th>
-              <th>Serie's number</th>
-              <th>Reps number</th>
-              <th>Weight</th>
-              <th>Comment</th>
+              <tr>
+                <th>Exercise's name</th>
+                <th>Serie's number</th>
+                <th>Reps number</th>
+                <th>Weight</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Curl de biceps</td>
+                <td>4</td>
+                <td>12</td>
+                <td>10kg</td>
+                <td>Hoy me he visto bastante bien</td>
+              </tr>
+              <tr>
+                <td>Dominadas</td>
+                <td>4</td>
+                <td>12</td>
+                <td>15kg</td>
+                <td>Hoy me he visto bastante bien</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li class="day">
+          <p class="day__title">Miercoles 10 de Mayo</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Exercise's name</th>
+                <th>Serie's number</th>
+                <th>Reps number</th>
+                <th>Weight</th>
+                <th>Comment</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
@@ -122,6 +162,49 @@
           </table>
         </li>
       </ul>
+    </section>
+    <section id="my-schedule">
+      <h1 class="title">Dashboard</h1>
+      <div class="schedule">
+        <div class="schedule__header">
+          <p class="title">Schedule</p>
+          <select name="schedule-select">
+            <option value="week">By week</option>
+            <option value="week">By month</option>
+            <option value="week">By day</option>
+          </select>
+        </div>
+      </div>
+      <div class="schedule__body">
+        <div class="schedule__day">
+          <p class="title">22</p>
+          <p class="subtitle">MON</p>
+        </div>
+        <div class="schedule__day">
+          <p class="title">23</p>
+          <p class="subtitle">TUE</p>
+        </div>
+        <div class="schedule__day schedule__day--today">
+          <p class="title">24</p>
+          <p class="subtitle">WED</p>
+        </div>
+        <div class="schedule__day">
+          <p class="title">25</p>
+          <p class="subtitle">THU</p>
+        </div>
+        <div class="schedule__day">
+          <p class="title">26</p>
+          <p class="subtitle">FRI</p>
+        </div>
+        <div class="schedule__day">
+          <p class="title">27</p>
+          <p class="subtitle">SAT</p>
+        </div>
+        <div class="schedule__day">
+          <p class="title">28</p>
+          <p class="subtitle">SUN</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>

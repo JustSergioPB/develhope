@@ -3,6 +3,8 @@
   --color-primary-500: #2541b2;
   --color-primary-700: #152b79;
   --color-primary-900: #091234;
+  --color-danger: #ffebeb;
+  --color-danger-500: #ff0a0a;
   --text-sm: 0.8rem;
 }
 
@@ -12,12 +14,24 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
   color: var(--color-primary-700);
 }
 
@@ -53,7 +67,39 @@ button {
   all: unset;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 0.1rem var(--color-primary-900);
+  border-radius: 0.5rem;
+}
+
+thead {
+  background-color: var(--color-primary-900);
+  color: white;
+}
+
+th {
+  padding: 0.5rem;
+}
+
+td {
+  padding: 0.5rem;
+  border: solid 0.1rem var(--color-primary-900);
+}
+
 #diary {
+  background-color: var(--color-primary);
+}
+
+.link {
+  color: var(--color-primary-700);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.link:hover {
+  cursor: pointer;
   background-color: var(--color-primary);
 }
 
@@ -68,16 +114,20 @@ button {
   color: white;
 }
 
-.button--discrete {
-  color: var(--color-primary-500);
+.button--danger {
+  color: var(--color-danger-500);
 }
 
-.button--discrete:hover {
+.button--danger:hover {
   cursor: pointer;
-  background-color: var(--color-primary);
+  background-color: var(--color-danger);
 }
+
 .navigation {
+  background-color: white;
   position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,6 +154,12 @@ button {
   gap: 1rem;
 }
 
+.form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
 .form__row {
   display: flex;
   gap: 0.5rem;
@@ -127,6 +183,7 @@ button {
 .form__hint {
   font-size: var(--text-sm);
   font-weight: 600;
+  text-align: end;
 }
 
 .form__field--50 {
@@ -143,4 +200,14 @@ button {
 
 .title {
   margin-bottom: 2rem;
+}
+
+.day {
+  margin-bottom: 1.5rem;
+}
+
+.day__date {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-primary-900);
 }

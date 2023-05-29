@@ -3,13 +3,21 @@
   --color-primary: #ffefeb;
   --color-primary-500: #ff521b;
   --color-primary-900: #c74015;
+  --color-secondary: #eee8ff;
+  --color-secondary-500: #521bff;
+  --color-secondary-900: #100533;
   --text-sm: 0.8rem;
+  --border: solid 0.1rem var(--color-primary-900);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -25,13 +33,25 @@ section {
 }
 
 input,
-select,
 textarea {
   all: unset;
   padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--color-primary);
   color: var(--color-primary-500);
+}
+
+select {
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-primary-500);
+  border: none;
+}
+
+select:focus-visible {
+  outline: solid 1px var(--color-primary-500);
 }
 
 label {
@@ -47,6 +67,22 @@ input::placeholder {
 
 button {
   all: unset;
+}
+
+table {
+  width: 100%;
+  border: var(--border);
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--color-primary-900);
+  color: white;
+}
+
+th,
+td {
+  padding: 0.5rem;
 }
 
 .section-2 {
@@ -67,13 +103,13 @@ button {
 
 .link {
   border-radius: 0.5rem;
-  color: var(--color-primary-500);
+  color: var(--color-secondary-500);
   padding: 0.5rem 0.75rem;
 }
 
 .link:hover {
   cursor: pointer;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .navigation .list {
@@ -92,10 +128,23 @@ button {
   gap: 1rem;
 }
 
+.form__row {
+  display: flex;
+  gap: 1rem;
+}
+
 .form__field {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.form__field--85 {
+  flex-basis: 85%;
+}
+
+.form__field--5 {
+  flex-basis: 5%;
 }
 
 .form__actions {
@@ -104,7 +153,13 @@ button {
   justify-content: flex-end;
 }
 
-.title {
+.form__hint {
+  text-align: end;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+h1.title {
   margin-bottom: 2rem;
 }
 
@@ -123,11 +178,67 @@ button {
 }
 
 .button--discrete {
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
   color: var(--color-primary-500);
 }
 
 .button--discrete:hover {
   cursor: pointer;
   background-color: var(--color-primary);
+}
+
+.day {
+  margin-bottom: 1.5rem;
+}
+
+.day__title {
+  color: var(--color-primary-900);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.schedule__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.schedule__header .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.schedule__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.schedule__day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(100% / 7);
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-500);
+}
+
+.schedule__day.schedule__day--today {
+  color: var(--color-secondary);
+  background-color: var(--color-secondary-500);
+}
+
+.schedule__day .title {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.schedule__day .subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
