@@ -6,6 +6,7 @@
   --color-danger: #ffebeb;
   --color-danger-500: #ff0a0a;
   --text-sm: 0.8rem;
+  --text-l: 1.25rem;
 }
 
 * {
@@ -202,12 +203,61 @@ td {
   margin-bottom: 2rem;
 }
 
-.day {
+.timeline .day {
   margin-bottom: 1.5rem;
 }
 
-.day__date {
+.timeline .day__date {
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--color-primary-900);
+}
+
+#calory-tracking .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#calory-tracking .header .header__title {
+  font-size: var(--text-l);
+  font-weight: 700;
+}
+
+#calory-tracking .header .header__selector {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.schedule .day {
+  flex-basis: calc(100% / 7);
+  border-radius: 0.5rem;
+  border: solid 0.125rem var(--color-primary-500);
+  color: var(--color-primary-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+
+.schedule .day.day--today {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.schedule .day .day__number {
+  font-size: var(--text-l);
+}
+
+.schedule .day .day__name {
+  font-size: var(--text-sm);
 }
