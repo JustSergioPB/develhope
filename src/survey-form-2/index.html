@@ -99,8 +99,20 @@
    </section>
    <section>
     <h2>My components</h2>
+    <div #input-hover>
     <label for="input-error">My error input</label>
-    <input type="text" id="input-error" class="input-error" placeholder="Entered Text"/>
-   </section>
+    <input type="text" #input-error class="input-error" placeholder="Entered Text"/>
+    </div>
+    
+    <div id="input-hover">
+      <label for="input-hover">My hover input</label>
+      <input type="text" id="input-hover" class="input-hover" placeholder="Entered Text"/>
+    </div>
+
+    <div id="input-disabled">
+      <label>My disabled input</label>
+      <input type="text" placeholder="Placeholder Text" class="input-hover" disabled>
+    </div>
+    </section>
   </body>
 </html>

@@ -10,48 +10,80 @@
   --gray-color-light: #f8f9fa;
 }
 
-input{
-  all: unset
+input {
+  all: unset;
+}
+.input-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
-.input-error{
+.input-error {
   color: var(--danger-color);
   background-color: var(--danger-color-light);
   border: solid 2px var(--danger-color);
   padding: 8px;
-  border-radius: 4px;  
+  border-radius: 4px;
 }
-.input-error::placeholder{
+.input-error::placeholder {
   color: var(--danger-color);
 }
-.input-hover{
+
+ /* ===== INPUT_HOVER ===== */
+
+
+.input-hover {
   border: solid 2px var(--primary-color);
   padding: 8px;
   border-radius: 4px;
-  background-color: var(--primary-color-light); 
+  background-color: var(--primary-color-light);
 }
-.input-hover:hover{
-  background-color: var(--primary-color);
-  padding: 8px;
-  border-radius: 4px; 
 
-}
-.input-hover:focus{
-  background-color:var(--primary-color-dark);
-  color:var(--primary-color-light)
-}
-.input-hover::placeholder{
-  color:var(--primary-color-dark)
-}
-.input-dissable{
-  border: solid 2px var(--gray-color-dark);
-  background-color: var(--gray-color-dark);
+.input-hover:hover {
+  background-color: var(--primary-color);
   padding: 8px;
   border-radius: 4px;
 }
-/*por las dudas
-/* .input-dissable:disabled{
+.input-hover-2 {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--primary-color-light);
+}
+.input-hover-2:hover {
+  border:2px solid var(--primary-color);
+}
+.input-hover-2:hover::placeholder {
+  color: var(--primary-color-dark);
+}
+.input-hover-2::placeholder {
+  color: var(--primary-color-dark);
+}
+.input-hover:hover::placeholder {
+  color: var(--primary-color-light);
+}
+.input-hover:focus {
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color-light);
+}
+.input-hover::placeholder {
+  color: var(--primary-color-dark);
+}
+/*  ===== END INPUT-HOVER ===== */
+
+
+.input-hover::placeholder{
+  color:var(--primary-color-dark)
+}
+/* .input-dissable{
+  border: solid 2px var(--gray-color-dark);
+  background-color: var(--gray-color-dark);
+  padding: 8px;
+  border-radius: 4px; 
+}*/
+
+ .input-hover:disabled{
   background-color: var(--gray-color-dark);
   color:var(--gray-color);
   border: var(--gray-color-dark);
-} */
