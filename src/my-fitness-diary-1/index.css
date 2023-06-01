@@ -89,6 +89,14 @@ td {
   border: solid 0.1rem var(--color-primary-900);
 }
 
+select {
+  border: unset;
+  background: var(--color-primary);
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-primary-500);
+}
+
 #diary {
   background-color: var(--color-primary);
 }
@@ -269,13 +277,17 @@ td {
   height: 5rem;
 }
 
-#calory-tracking .data .calories {
+#calory-tracking .data:first-child {
+  margin-bottom: 1.5rem;
+}
+
+#calory-tracking .data:first-child .calories {
   display: flex;
   height: 100%;
   gap: 0.5rem;
 }
 
-#calory-tracking .data .calories .calory__icon {
+#calory-tracking .data:first-child .calories .calory__icon {
   border-radius: 0.5rem;
   background-color: var(--color-primary);
   height: 100%;
@@ -285,19 +297,50 @@ td {
   align-items: center;
 }
 
-#calory-tracking .data .calories .calory__icon img {
+#calory-tracking .data:first-child .calories .calory__icon img {
   filter: invert(12%) sepia(67%) saturate(2882%) hue-rotate(219deg)
     brightness(93%) contrast(96%);
   height: 1.5rem;
   width: 1.5rem;
 }
 
-#calory-tracking .data .calories .calory__data .title {
+#calory-tracking .data:first-child .calories .calory__data .title {
   font-size: 1.563rem;
   margin-bottom: 0.25rem;
   font-weight: 300;
 }
 
-#calory-tracking .data .calories .calory__data .subtitle {
+#calory-tracking .data:first-child .calories .calory__data .subtitle {
+  font-weight: 600;
+}
+
+#calory-tracking .data:nth-child(2) {
+  display: flex;
+  gap: 0.5rem;
+  height: 5rem;
+}
+
+#calory-tracking .data:nth-child(2) .calory__icon {
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calory-tracking .data:nth-child(2) .calory__content .content__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#calory-tracking .data:nth-child(2) .calory__content .content__header .title {
+  font-size: 1.563rem;
+  margin-bottom: 0.25rem;
+  font-weight: 300;
+}
+
+#calory-tracking .data:nth-child(2) .calory__content .subtitle {
   font-weight: 600;
 }
