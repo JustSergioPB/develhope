@@ -1,0 +1,32 @@
+
+.cards{
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.card{
+    border-radius: 2rem;
+    box-shadow: 5px 10px 15px black;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 17rem;
+    margin: 0.5rem;
+    color:dimgrey
+
+}
+.card img{
+    margin-top: 2rem;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
+.icon img{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+    filter: invert(32%) sepia(97%) saturate(5144%) hue-rotate(263deg) brightness(88%) contrast(101%);
+}
