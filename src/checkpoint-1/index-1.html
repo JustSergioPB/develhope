@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./index-1.css" />
+    <title>Checkpoint 1</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="resume">
+        <h3 class="title">Tu balance</h3>
+        <p class="amount">625,00€</p>
+        <div class="buttons">
+          <button class="button button--primary">
+            <img src="./wallet.svg" alt="Solicitar cantidad" />
+            Solicitar
+          </button>
+          <button class="button button--primary">
+            <img src="./wallet.svg" alt="Transferir dinero" />
+            Transferir
+          </button>
+          <button class="button button--secondary button--icon">
+            <img src="./dots-vertical.svg" alt="Más opciones" />
+          </button>
+        </div>
+      </section>
+      <section class="transactions">
+        <div class="transactions__header">
+          <h3 class="title">Transactions</h3>
+          <button class="button button--primary button--transparent">
+            See all
+          </button>
+        </div>
+        <ul class="transactions__body">
+          <li class="transaction">
+            <div class="transaction__icon-wrapper">
+              <img src="./wallet.svg" alt="Icono transferencia" />
+            </div>
+            <div class="transaction__data">
+              <div class="transaction__info">
+                <p class="transaction__title">Upwork</p>
+                <p class="transaction__date">Work 15Feb</p>
+              </div>
+              <div class="transaction__money">
+                <p class="transaction__amount transaction__amount--negative">
+                  -10.00€
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="transaction">
+            <div class="transaction__icon-wrapper">
+              <img src="./wallet.svg" alt="Icono transferencia" />
+            </div>
+            <div class="transaction__data">
+              <div class="transaction__info">
+                <p class="transaction__title">Parent</p>
+                <p class="transaction__date">Receive 16Feb</p>
+              </div>
+              <div class="transaction__money">
+                <p class="transaction__amount transaction__amount--positive">
+                  +100.00€
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
